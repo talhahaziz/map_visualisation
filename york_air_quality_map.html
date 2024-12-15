@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_de09fd0b0b5d73af77cfb9acd1086d39 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_de09fd0b0b5d73af77cfb9acd1086d39" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_de09fd0b0b5d73af77cfb9acd1086d39 = L.map(
+                "map_de09fd0b0b5d73af77cfb9acd1086d39",
+                {
+                    center: [53.959, -1.081],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_375a6d4fa99bf7a45f9d501e91e419ca = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_375a6d4fa99bf7a45f9d501e91e419ca.addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var marker_11bf72591c5fca80b56f8664f77ad2e3 = L.marker(
+                [53.964784, -1.088949],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_e3a3cb7fe22cc2ebb69c6bf17c3fa969 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_11bf72591c5fca80b56f8664f77ad2e3.setIcon(icon_e3a3cb7fe22cc2ebb69c6bf17c3fa969);
+        
+    
+        var popup_ae4102a7ffbd9d50af08588e4af1d079 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fc37e171248f0b534650e71de808e5f = $(`<div id="html_9fc37e171248f0b534650e71de808e5f" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Bootham</div>`)[0];
+                popup_ae4102a7ffbd9d50af08588e4af1d079.setContent(html_9fc37e171248f0b534650e71de808e5f);
+            
+        
+
+        marker_11bf72591c5fca80b56f8664f77ad2e3.bindPopup(popup_ae4102a7ffbd9d50af08588e4af1d079)
+        ;
+
+        
+    
+    
+            var marker_cbb8bbd78524275dff37402bcbb90229 = L.marker(
+                [53.951928, -1.074645],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_7b50f1c847c43e9dc331bbbb11f750a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cbb8bbd78524275dff37402bcbb90229.setIcon(icon_7b50f1c847c43e9dc331bbbb11f750a0);
+        
+    
+        var popup_f08cf299a2b99534a7ddf36a5bfa3b9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e368172716067a457b672629307daa95 = $(`<div id="html_e368172716067a457b672629307daa95" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Fishergate</div>`)[0];
+                popup_f08cf299a2b99534a7ddf36a5bfa3b9d.setContent(html_e368172716067a457b672629307daa95);
+            
+        
+
+        marker_cbb8bbd78524275dff37402bcbb90229.bindPopup(popup_f08cf299a2b99534a7ddf36a5bfa3b9d)
+        ;
+
+        
+    
+    
+            var marker_4129f37b9f06266d374aba8c6c0629bc = L.marker(
+                [53.943548, -1.077012],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_fb9467929725e0c88dc7d53b46e11c9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4129f37b9f06266d374aba8c6c0629bc.setIcon(icon_fb9467929725e0c88dc7d53b46e11c9b);
+        
+    
+        var popup_03c58c5f31f4a0df365f736740da30f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0861dc0d0bfd1dc079041ccfac1f8989 = $(`<div id="html_0861dc0d0bfd1dc079041ccfac1f8989" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Fulford Road</div>`)[0];
+                popup_03c58c5f31f4a0df365f736740da30f4.setContent(html_0861dc0d0bfd1dc079041ccfac1f8989);
+            
+        
+
+        marker_4129f37b9f06266d374aba8c6c0629bc.bindPopup(popup_03c58c5f31f4a0df365f736740da30f4)
+        ;
+
+        
+    
+    
+            var marker_f940cf07b535f3b3268420821f747a46 = L.marker(
+                [53.964086, -1.083812],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_7b340cd0936ba85f620584c17f5d6dd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f940cf07b535f3b3268420821f747a46.setIcon(icon_7b340cd0936ba85f620584c17f5d6dd5);
+        
+    
+        var popup_d97456f5c417c1c7cd0963545122328a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_861e64c60890f12cc1da842179285a09 = $(`<div id="html_861e64c60890f12cc1da842179285a09" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Gillygate</div>`)[0];
+                popup_d97456f5c417c1c7cd0963545122328a.setContent(html_861e64c60890f12cc1da842179285a09);
+            
+        
+
+        marker_f940cf07b535f3b3268420821f747a46.bindPopup(popup_d97456f5c417c1c7cd0963545122328a)
+        ;
+
+        
+    
+    
+            var marker_31ae050f976d5f00af1befc359f96607 = L.marker(
+                [53.964536, -1.070159],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_0ca6937f3018853e1d3b8399d9433a6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_31ae050f976d5f00af1befc359f96607.setIcon(icon_0ca6937f3018853e1d3b8399d9433a6d);
+        
+    
+        var popup_8891cf8afee0f5da07fca508fdbc48e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77278cf420d30e2a60486c7d9c220d87 = $(`<div id="html_77278cf420d30e2a60486c7d9c220d87" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Heworth Green</div>`)[0];
+                popup_8891cf8afee0f5da07fca508fdbc48e4.setContent(html_77278cf420d30e2a60486c7d9c220d87);
+            
+        
+
+        marker_31ae050f976d5f00af1befc359f96607.bindPopup(popup_8891cf8afee0f5da07fca508fdbc48e4)
+        ;
+
+        
+    
+    
+            var marker_950ee19377290e33b8edb94bfccb1c58 = L.marker(
+                [53.955256, -1.098494],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_e7583b172a09ef0adbfe6940bc16e0cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_950ee19377290e33b8edb94bfccb1c58.setIcon(icon_e7583b172a09ef0adbfe6940bc16e0cb);
+        
+    
+        var popup_2c5745391782f7655349cc1d59ff5a4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f118280ca0e14ff13a4ad714aed0d5dc = $(`<div id="html_f118280ca0e14ff13a4ad714aed0d5dc" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Holgate</div>`)[0];
+                popup_2c5745391782f7655349cc1d59ff5a4a.setContent(html_f118280ca0e14ff13a4ad714aed0d5dc);
+            
+        
+
+        marker_950ee19377290e33b8edb94bfccb1c58.bindPopup(popup_2c5745391782f7655349cc1d59ff5a4a)
+        ;
+
+        
+    
+    
+            var marker_9aa24aede20d8e0a361f0df8a18b48e9 = L.marker(
+                [53.955144, -1.073315],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_f271fefd1ee891f8436e401fde230ef3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9aa24aede20d8e0a361f0df8a18b48e9.setIcon(icon_f271fefd1ee891f8436e401fde230ef3);
+        
+    
+        var popup_4d4245c95d88d1cc81a26e747dafe892 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c25bb56bfa0ef03599b1acfd3221da76 = $(`<div id="html_c25bb56bfa0ef03599b1acfd3221da76" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Lawrence Street</div>`)[0];
+                popup_4d4245c95d88d1cc81a26e747dafe892.setContent(html_c25bb56bfa0ef03599b1acfd3221da76);
+            
+        
+
+        marker_9aa24aede20d8e0a361f0df8a18b48e9.bindPopup(popup_4d4245c95d88d1cc81a26e747dafe892)
+        ;
+
+        
+    
+    
+            var marker_6266226612871951c718d41f8b9bbc0e = L.marker(
+                [53.953991, -1.089669],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_8f16ba92cb83f6d18685b3c7b0edfd39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6266226612871951c718d41f8b9bbc0e.setIcon(icon_8f16ba92cb83f6d18685b3c7b0edfd39);
+        
+    
+        var popup_fecdb5f7e6ea0c20f973849cb8e4046c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dc72d33dbe4e884cef59de03e4cf12b = $(`<div id="html_4dc72d33dbe4e884cef59de03e4cf12b" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Nunnery Lane</div>`)[0];
+                popup_fecdb5f7e6ea0c20f973849cb8e4046c.setContent(html_4dc72d33dbe4e884cef59de03e4cf12b);
+            
+        
+
+        marker_6266226612871951c718d41f8b9bbc0e.bindPopup(popup_fecdb5f7e6ea0c20f973849cb8e4046c)
+        ;
+
+        
+    
+    
+            var marker_59778633251add850877149676fcb1a7 = L.marker(
+                [53.940318, -1.095175],
+                {
+}
+            ).addTo(map_de09fd0b0b5d73af77cfb9acd1086d39);
+        
+    
+            var icon_4e418beb7bdac09cf9d30e8f269aebbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_59778633251add850877149676fcb1a7.setIcon(icon_4e418beb7bdac09cf9d30e8f269aebbc);
+        
+    
+        var popup_509477b2844e23f6247a04f50e12472a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_029145a40b2ac4d547e7a3e4cfd45d40 = $(`<div id="html_029145a40b2ac4d547e7a3e4cfd45d40" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Plantation Drive</div>`)[0];
+                popup_509477b2844e23f6247a04f50e12472a.setContent(html_029145a40b2ac4d547e7a3e4cfd45d40);
+            
+        
+
+        marker_59778633251add850877149676fcb1a7.bindPopup(popup_509477b2844e23f6247a04f50e12472a)
+        ;
+
+        
+    
+</script>
+</html>
