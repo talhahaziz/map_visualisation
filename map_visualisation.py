@@ -48,7 +48,7 @@ heat_group.add_to(york_map)
 folium.LayerControl().add_to(york_map)
 
 # Save the map to an HTML file
-york_map.save("york_air_quality_with_toggle_map.html")
+york_map.save("heatmap.html")
 
 # Display the map if running in a Jupyter Notebook
 york_map
