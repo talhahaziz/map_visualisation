@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e0f8f42938fd405047db56203595784b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e0f8f42938fd405047db56203595784b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e0f8f42938fd405047db56203595784b = L.map(
+                "map_e0f8f42938fd405047db56203595784b",
+                {
+                    center: [53.959, -1.081],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6505024fd36d30459a4ab34c51b39f7a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6505024fd36d30459a4ab34c51b39f7a.addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var marker_60e9bcf7bb570b9dd0e6a598d540fb9d = L.marker(
+                [53.964784, -1.088949],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_81f9ba5fb5b65ef883d0e595d9e79f2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_60e9bcf7bb570b9dd0e6a598d540fb9d.setIcon(icon_81f9ba5fb5b65ef883d0e595d9e79f2c);
+        
+    
+        var popup_14de2425912b902fb635f5b1c8534638 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5d3d0f34baa52b403795de23b2510c1 = $(`<div id="html_a5d3d0f34baa52b403795de23b2510c1" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Bootham<br><b>Avg NO2:</b> 15.03732667</div>`)[0];
+                popup_14de2425912b902fb635f5b1c8534638.setContent(html_a5d3d0f34baa52b403795de23b2510c1);
+            
+        
+
+        marker_60e9bcf7bb570b9dd0e6a598d540fb9d.bindPopup(popup_14de2425912b902fb635f5b1c8534638)
+        ;
+
+        
+    
+    
+            var marker_f9e7a068b69da08dbfcb2b34fcc13d6e = L.marker(
+                [53.951928, -1.074645],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_aef9437a4450b0b4dd7ff365854df34c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f9e7a068b69da08dbfcb2b34fcc13d6e.setIcon(icon_aef9437a4450b0b4dd7ff365854df34c);
+        
+    
+        var popup_f3ac0b0709ea4a83bead606e8326965d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23fbb30c2a48d1295402eb9b17f0e6ea = $(`<div id="html_23fbb30c2a48d1295402eb9b17f0e6ea" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Fishergate<br><b>Avg NO2:</b> 26.87817378</div>`)[0];
+                popup_f3ac0b0709ea4a83bead606e8326965d.setContent(html_23fbb30c2a48d1295402eb9b17f0e6ea);
+            
+        
+
+        marker_f9e7a068b69da08dbfcb2b34fcc13d6e.bindPopup(popup_f3ac0b0709ea4a83bead606e8326965d)
+        ;
+
+        
+    
+    
+            var marker_87b69754813ccdc89fee048850165fd1 = L.marker(
+                [53.943548, -1.077012],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_896faa5a09b44da612b959b7ce05d1ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_87b69754813ccdc89fee048850165fd1.setIcon(icon_896faa5a09b44da612b959b7ce05d1ea);
+        
+    
+        var popup_c3406c6fc0073ac5fd6a319c03d434b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7991b671757dd033be42ae9148f9252e = $(`<div id="html_7991b671757dd033be42ae9148f9252e" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Fulford Road<br><b>Avg NO2:</b> 22.5693504</div>`)[0];
+                popup_c3406c6fc0073ac5fd6a319c03d434b7.setContent(html_7991b671757dd033be42ae9148f9252e);
+            
+        
+
+        marker_87b69754813ccdc89fee048850165fd1.bindPopup(popup_c3406c6fc0073ac5fd6a319c03d434b7)
+        ;
+
+        
+    
+    
+            var marker_80aa89d56e75c2c13cbedd641d4e1b7d = L.marker(
+                [53.964086, -1.083812],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_11cc61b6e2ec683032ed57f2f03243ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_80aa89d56e75c2c13cbedd641d4e1b7d.setIcon(icon_11cc61b6e2ec683032ed57f2f03243ab);
+        
+    
+        var popup_784a3d58c23f36b3567e2aa66ac1c522 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b9c4b16416aa5bbf43990a18a7978e6 = $(`<div id="html_3b9c4b16416aa5bbf43990a18a7978e6" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Gillygate<br><b>Avg NO2:</b> 26.09809603</div>`)[0];
+                popup_784a3d58c23f36b3567e2aa66ac1c522.setContent(html_3b9c4b16416aa5bbf43990a18a7978e6);
+            
+        
+
+        marker_80aa89d56e75c2c13cbedd641d4e1b7d.bindPopup(popup_784a3d58c23f36b3567e2aa66ac1c522)
+        ;
+
+        
+    
+    
+            var marker_3e68fcad44474358e77624360214d5ce = L.marker(
+                [53.964536, -1.070159],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_33f819ff1d5cf7c61d78df72d1fd731d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3e68fcad44474358e77624360214d5ce.setIcon(icon_33f819ff1d5cf7c61d78df72d1fd731d);
+        
+    
+        var popup_1d13a1a85383e13c5ee78661f21e0fb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fadad2265ecf857e2e9085960ee10471 = $(`<div id="html_fadad2265ecf857e2e9085960ee10471" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Heworth Green<br><b>Avg NO2:</b> 26.34922746</div>`)[0];
+                popup_1d13a1a85383e13c5ee78661f21e0fb8.setContent(html_fadad2265ecf857e2e9085960ee10471);
+            
+        
+
+        marker_3e68fcad44474358e77624360214d5ce.bindPopup(popup_1d13a1a85383e13c5ee78661f21e0fb8)
+        ;
+
+        
+    
+    
+            var marker_6eb7d20fe82246a427846590a453f18f = L.marker(
+                [53.955256, -1.098494],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_0c4490c2f5c9d51501912588f7d21c7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6eb7d20fe82246a427846590a453f18f.setIcon(icon_0c4490c2f5c9d51501912588f7d21c7a);
+        
+    
+        var popup_7449972ae944354fa8a168f2317bdf97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15b7380e6246aa542463751288e77524 = $(`<div id="html_15b7380e6246aa542463751288e77524" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Holgate<br><b>Avg NO2:</b> 24.77962621</div>`)[0];
+                popup_7449972ae944354fa8a168f2317bdf97.setContent(html_15b7380e6246aa542463751288e77524);
+            
+        
+
+        marker_6eb7d20fe82246a427846590a453f18f.bindPopup(popup_7449972ae944354fa8a168f2317bdf97)
+        ;
+
+        
+    
+    
+            var marker_499a98c5364541a4d707912ae3221a43 = L.marker(
+                [53.955144, -1.073315],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_2d7d3e50222554a73260027004c0c5f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_499a98c5364541a4d707912ae3221a43.setIcon(icon_2d7d3e50222554a73260027004c0c5f4);
+        
+    
+        var popup_ddc5ed3d90a92d012aa17fa1ca1d73ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6fcecf793473a29f8aa1dafdeeedaf1 = $(`<div id="html_f6fcecf793473a29f8aa1dafdeeedaf1" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Lawrence Street<br><b>Avg NO2:</b> 28.29719903</div>`)[0];
+                popup_ddc5ed3d90a92d012aa17fa1ca1d73ab.setContent(html_f6fcecf793473a29f8aa1dafdeeedaf1);
+            
+        
+
+        marker_499a98c5364541a4d707912ae3221a43.bindPopup(popup_ddc5ed3d90a92d012aa17fa1ca1d73ab)
+        ;
+
+        
+    
+    
+            var marker_49af3edb499472d80199977fa3f41671 = L.marker(
+                [53.953991, -1.089669],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_f56e36f5351404093e562407d0f774a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_49af3edb499472d80199977fa3f41671.setIcon(icon_f56e36f5351404093e562407d0f774a1);
+        
+    
+        var popup_11daf09dc9f242975eb2b274f893988c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5347f65726e4f8de3471e5f02cb79be1 = $(`<div id="html_5347f65726e4f8de3471e5f02cb79be1" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Nunnery Lane<br><b>Avg NO2:</b> 24.60914678</div>`)[0];
+                popup_11daf09dc9f242975eb2b274f893988c.setContent(html_5347f65726e4f8de3471e5f02cb79be1);
+            
+        
+
+        marker_49af3edb499472d80199977fa3f41671.bindPopup(popup_11daf09dc9f242975eb2b274f893988c)
+        ;
+
+        
+    
+    
+            var marker_5feb09875e4ee2d2da391ad15c8a37e1 = L.marker(
+                [53.940318, -1.095175],
+                {
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var icon_8986b6597c2dd92cdd63a022a2bdb110 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5feb09875e4ee2d2da391ad15c8a37e1.setIcon(icon_8986b6597c2dd92cdd63a022a2bdb110);
+        
+    
+        var popup_fe98463f513b8cd004f96caaf00b6a94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14c7f82652fedea18dfa7e542070eb5e = $(`<div id="html_14c7f82652fedea18dfa7e542070eb5e" style="width: 100.0%; height: 100.0%;"><b>Station:</b> Plantation Drive<br><b>Avg NO2:</b> No Data</div>`)[0];
+                popup_fe98463f513b8cd004f96caaf00b6a94.setContent(html_14c7f82652fedea18dfa7e542070eb5e);
+            
+        
+
+        marker_5feb09875e4ee2d2da391ad15c8a37e1.bindPopup(popup_fe98463f513b8cd004f96caaf00b6a94)
+        ;
+
+        
+    
+    
+            var feature_group_e710af438902824bee3e94431225fdc3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_afab280608a68375f5bd644c4bf4ba7d = L.heatLayer(
+                [[53.964784, -1.088949, 15.03732667], [53.951928, -1.074645, 26.87817378], [53.943548, -1.077012, 22.5693504], [53.964086, -1.083812, 26.09809603], [53.964536, -1.070159, 26.34922746], [53.955256, -1.098494, 24.77962621], [53.955144, -1.073315, 28.29719903], [53.953991, -1.089669, 24.60914678]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 16,
+  "radius": 50,
+  "blur": 25,
+}
+            );
+        
+    
+            heat_map_afab280608a68375f5bd644c4bf4ba7d.addTo(feature_group_e710af438902824bee3e94431225fdc3);
+        
+    
+            feature_group_e710af438902824bee3e94431225fdc3.addTo(map_e0f8f42938fd405047db56203595784b);
+        
+    
+            var layer_control_2f60294b095d5a8b75404ff3171b8f92_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6505024fd36d30459a4ab34c51b39f7a,
+                },
+                overlays :  {
+                    "Pollution HeatMap" : feature_group_e710af438902824bee3e94431225fdc3,
+                },
+            };
+            let layer_control_2f60294b095d5a8b75404ff3171b8f92 = L.control.layers(
+                layer_control_2f60294b095d5a8b75404ff3171b8f92_layers.base_layers,
+                layer_control_2f60294b095d5a8b75404ff3171b8f92_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_e0f8f42938fd405047db56203595784b);
+
+        
+</script>
+</html>
