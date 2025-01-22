@@ -1,0 +1,2 @@
+Created a heat map visualisation in Python to highlight areas with higher average NO2 concentrations and developed interactive maps using Folium to make data exploration intuitive.
+Utilised Python for data cleaning, analysis, and visualisation of air quality metrics across nine monitoring stations using libraries such as Pandas, Matplotlib, and Folium to apply data collected and cleaned from Excel. 
